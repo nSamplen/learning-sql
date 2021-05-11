@@ -74,4 +74,3 @@ select  title, author, amount,
 from book
 where ((select max(amount) from book) - amount) > 0  
 ;
-
